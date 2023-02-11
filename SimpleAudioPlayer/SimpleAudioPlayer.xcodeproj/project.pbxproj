@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15AA71CDF27564D980BA2A33 /* Pods_SimpleAudioPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE70A99CBE398BBA9FD33C1 /* Pods_SimpleAudioPlayer.framework */; };
 		C06496832997FBF50097636D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06496822997FBF50097636D /* AppDelegate.swift */; };
 		C06496852997FBF50097636D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06496842997FBF50097636D /* SceneDelegate.swift */; };
 		C06496872997FBF50097636D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06496862997FBF50097636D /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		362D98EB51A076298E7EAF0B /* Pods-SimpleAudioPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAudioPlayer.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAudioPlayer/Pods-SimpleAudioPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		C064967F2997FBF50097636D /* SimpleAudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06496822997FBF50097636D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C06496842997FBF50097636D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		C064968B2997FBF70097636D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C064968E2997FBF70097636D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C06496902997FBF70097636D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE70A99CBE398BBA9FD33C1 /* Pods_SimpleAudioPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAudioPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB44DDB38A60E536EC313451 /* Pods-SimpleAudioPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAudioPlayer.release.xcconfig"; path = "Target Support Files/Pods-SimpleAudioPlayer/Pods-SimpleAudioPlayer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AA71CDF27564D980BA2A33 /* Pods_SimpleAudioPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6FF3E4A2D5B641D9DA9AFD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				362D98EB51A076298E7EAF0B /* Pods-SimpleAudioPlayer.debug.xcconfig */,
+				FB44DDB38A60E536EC313451 /* Pods-SimpleAudioPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C06496762997FBF50097636D = {
 			isa = PBXGroup;
 			children = (
 				C06496812997FBF50097636D /* SimpleAudioPlayer */,
 				C06496802997FBF50097636D /* Products */,
+				B6FF3E4A2D5B641D9DA9AFD1 /* Pods */,
+				C08B4D7DB1527C092AD75C28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = SimpleAudioPlayer;
 			sourceTree = "<group>";
 		};
+		C08B4D7DB1527C092AD75C28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEE70A99CBE398BBA9FD33C1 /* Pods_SimpleAudioPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C06496932997FBF70097636D /* Build configuration list for PBXNativeTarget "SimpleAudioPlayer" */;
 			buildPhases = (
+				5ADF16F5C232B5902B1E583B /* [CP] Check Pods Manifest.lock */,
 				C064967B2997FBF50097636D /* Sources */,
 				C064967C2997FBF50097636D /* Frameworks */,
 				C064967D2997FBF50097636D /* Resources */,
+				6E1E3CF07C3DCCEE3A18AA02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5ADF16F5C232B5902B1E583B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleAudioPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1E3CF07C3DCCEE3A18AA02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleAudioPlayer/Pods-SimpleAudioPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleAudioPlayer/Pods-SimpleAudioPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleAudioPlayer/Pods-SimpleAudioPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C064967B2997FBF50097636D /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		C06496942997FBF70097636D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362D98EB51A076298E7EAF0B /* Pods-SimpleAudioPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		C06496952997FBF70097636D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB44DDB38A60E536EC313451 /* Pods-SimpleAudioPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
